@@ -2,6 +2,9 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  NODE_VERSION = "22"
+
 [[headers]]
   for = "/*.js"
   [headers.values]
@@ -9,10 +12,5 @@
 
 [[headers]]
   for = "/*.mjs"
-  [headers.values]
-    Content-Type = "application/javascript"
-
-[[headers]]
-  for = "/*.jsx"
   [headers.values]
     Content-Type = "application/javascript"
