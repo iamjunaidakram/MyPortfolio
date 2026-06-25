@@ -12,7 +12,7 @@ import IntroImg9 from "../../assets/img/intro/intro9.png";
 import IntroImg10 from "../../assets/img/intro/intro10.png";
 import IntroImg11 from "../../assets/img/intro/intro11.png";
 import IntroImg12 from "../../assets/img/intro/intro12.png";
-import Resume from "../../assets/doc/resume.pdf";
+import Resume from "../../assets/doc/Resume.pdf";
 import CheckCircleGreen from "../../assets/icon/check-circle-green.svg";
 
 export default function Intro() {

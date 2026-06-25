@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import "./style.scss";
 
-export default function experienceScroll() {
+export default function ExperienceScroll() {
   const steps = useMemo(
     () => [
       {
