@@ -1,0 +1,218 @@
+.skills {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #171b27;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    .title-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 80px;
+
+      .title {
+        background: linear-gradient(90deg, #babad0, #53628d 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 4px;
+        display: inline-block;
+        font-size: 32px;
+        line-height: 120%;
+        transform: translateZ(0);
+        font-weight: 400;
+        text-align: center;
+
+        .italic {
+          font-family: "PT Serif", serif;
+          font-weight: 400;
+          font-style: italic;
+        }
+      }
+    }
+
+    .skills-slider {
+      position: relative;
+      padding: 0 20px;
+
+      .slick-list {
+        overflow: hidden;
+      }
+
+      .slick-track {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .skills-logo {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 14px 0;
+    }
+
+    .skills-card {
+      width: 140px;
+      min-height: 140px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+      transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease;
+
+      img {
+        width: 54px;
+        height: 54px;
+        object-fit: contain;
+        transition: transform 0.35s ease;
+        animation: skillFloat 3.5s ease-in-out infinite;
+      }
+
+      span {
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        color: #e2e4e9;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      &:hover {
+        transform: translateY(-6px) scale(1.03);
+        border-color: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.06);
+
+        img {
+          transform: scale(1.08);
+        }
+      }
+    }
+  }
+}
+
+@keyframes skillFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Large tablets */
+@media (max-width: 1200px) {
+  .skills {
+    .wrapper {
+      .skills-card {
+        width: 132px;
+        min-height: 132px;
+      }
+    }
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .skills {
+    .wrapper {
+      .title-wrapper {
+        margin-bottom: 56px;
+      }
+
+      .title {
+        font-size: 28px;
+      }
+
+      .skills-card {
+        width: 124px;
+        min-height: 124px;
+
+        img {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .skills {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .wrapper {
+      .title-wrapper {
+        margin-bottom: 44px;
+      }
+
+      .title {
+        font-size: 24px;
+      }
+
+      .skills-slider {
+        padding: 0 10px;
+      }
+
+      .skills-card {
+        width: 112px;
+        min-height: 112px;
+        border-radius: 20px;
+
+        img {
+          width: 42px;
+          height: 42px;
+        }
+
+        span {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .skills {
+    .wrapper {
+      .title {
+        font-size: 22px;
+      }
+
+      .skills-card {
+        width: 104px;
+        min-height: 104px;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills {
+    .skills-card img,
+    .skills-card,
+    .skills-logo {
+      animation: none;
+      transition: none;
+    }
+  }
+}
