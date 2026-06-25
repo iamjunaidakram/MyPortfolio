@@ -4,7 +4,7 @@ import AIScribeImg from "../../assets/img/projects/AIScribe.webp";
 import AIScribeLogo from "../../assets/img/projects/CureMD-Logo.png";
 import GlamhieveImg from "../../assets/img/projects/glamhive.png";
 import GlamhieveLogo from "../../assets/img/projects/glamhiveLogo.png";
-import MintRouteImg from "../../assets/img/projects/mintRoute.png";
+import MintRouteImg from "../../assets/img/projects/mintroute.png";
 import MintRouteLogo from "../../assets/img/projects/mintroute-logo.png";
 import InvochatImg from "../../assets/img/projects/InvoChat.png";
 import InvochatLogo from "../../assets/img/projects/InvoChat-Logo.svg";
