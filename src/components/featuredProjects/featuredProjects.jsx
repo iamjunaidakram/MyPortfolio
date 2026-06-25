@@ -7,7 +7,7 @@ import GlamhieveLogo from "../../assets/img/projects/glamhiveLogo.png";
 import MintRouteImg from "../../assets/img/projects/mintroute.png";
 import MintRouteLogo from "../../assets/img/projects/mintroute-logo.png";
 import InvochatImg from "../../assets/img/projects/InvoChat.png";
-import InvochatLogo from "../../assets/img/projects/InvoChat-Logo.svg";
+import InvochatLogo from "../../assets/img/projects/Invochat-Logo.svg";
 
 const projects = [
   {
